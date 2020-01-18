@@ -1,0 +1,157 @@
+/*columns adjusts equally based on the size of the content BUT the buttons does not align when the column adjusts*/
+
+
+* {
+  box-sizing: border-box;
+     
+}
+
+.row {
+    display: flex;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;    
+}
+
+/*
+body{
+   height: 100%;  
+}
+*/
+
+/* Clear floats after the columns */
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+      
+}
+
+#columnOne {
+    background-color:#aaa;
+}
+
+#columnTwo {
+   background-color:#bbb;
+}
+
+#columnThree {
+  background-color:#ccc;
+}
+
+
+
+
+/*button*/
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: aliceblue;
+    padding: 4px;
+    font-size: 16px;
+    border: ridge;
+    cursor: pointer;    
+}
+
+.dropbtn:after {
+   display: inline-flex;    
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+  color: black;    
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.dropdown #darkKhaki:hover {background-color: #bdb76b;} 
+
+.dropdown #oliveDrab:hover {background-color: #6b8e23;} 
+
+.dropdown #darkOliveGreen:hover {background-color: #556b2f;} 
+
+.show {display: block;}
+
+
+/*text*/
+
+.dropdown #maShanZheng:hover {font-family: 'Ma Shan Zheng', cursive;}
+
+.dropdown #indieFlower:hover {font-family: 'Indie Flower';}
+
+.dropdown #amaticSC:hover {font-family: 'Amatic SC', cursive;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

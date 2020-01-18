@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Three Columns</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Three Column Newsletter">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Steve">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="genericNewsletter.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div class="row">
+            <div class="column" id="columnOne">
+                <h2 id="column1">Placeholder Column 1</h2>
+                <p id="paragraph1">Select information regarding HTML, CSS or JavaScript..</p>
+                
+            <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a id="myHTML" href="#html" onclick="html();">HTML</a>
+                    <a id="myCSS" href="#css" onclick="css();">CSS</a>
+                    <a id="myJavascript" href="#javascript" onclick="javascript();">JavaScript</a>
+                  </div>
+            </div>
+                
+            </div>
+            
+            
+            <div class="column" id="columnTwo">
+                <h2 id="column2">Placeholder Column 2</h2>
+                <p id=paragraph2>Change background color</p>
+                
+            <div class="dropdown">
+                 <button onclick="colorFunction()" class="dropbtn">Dropdown</button>
+                 <div id="colorDropdown" class="dropdown-content">
+                     <a id="darkKhaki" class="backgroundChange" href="#darkKhaki" onclick="darkKhaki();">Dark Khaki</a>
+                    <a id="oliveDrab" class="backgroundChange" href="#oliveDrab" onclick="oliveDrab();">Olive Drab</a>
+                    <a id="darkOliveGreen" class="backgroundChange" href="#darkOliveGreen" onclick="darkOliveGreen();">Dark Olive Green</a>   
+                 </div>     
+            </div>    
+                
+                
+            </div>
+            
+            <div class="column" id="columnThree">
+                <h2 id=column3>Placeholder Column 3</h2>
+                <p id=paragraph3>Some text..</p>
+             
+            <div class="dropdown">    
+                <button onclick="textFunction()" class="dropbtn">Dropdown</button>
+                <div id="textDropdown" class="dropdown-content">
+                    <a id="maShanZheng" class="text" href="#maShanZheng" onclick="maShanZheng();">Ma Shan Zheng</a>
+                    <a id="indieFlower" class="text" href="#indieFlower" onclick="indieFlower();">Indie Flower</a>
+                    <a id="amaticSC" class="text" href="#amaticSC" onclick="amaticSC();">Amatic SC</a>
+                </div>    
+                
+            </div>    
+                
+            </div>
+                
+              
+        </div>
+    
+        <script src="genericNewsletter.js"></script>
+    
+    </body>
+
+</html>
